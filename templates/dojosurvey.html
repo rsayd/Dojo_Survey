@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .container {
+        width: 600px;
+        height: 500px;
+        background-color: grey;
+        text-align: center;
+        margin: auto;
+    }
+
+    h1 {
+        color: orange;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Dojo Survey</h1>
+        <form action="/result" method="POST">
+            <h2>Name :</h2>
+            <input type="text" name="username" placeholder="Name">
+            <h2>Dojo Locations :</h2>
+            <select name="dojolocation">
+                <option value=" California">California</option>
+                <option value="Nevada">Nevada</option>
+                <option value="Washington">Washington</option>
+                <option value="Colorado">Colorado</option>
+            </select>
+            <h2>Favorite Language :</h2>
+            <select name="favlanguage" placeholder="Favorite Language">
+                <option value="Python">Python</option>
+                <option value="HTML">Javascript</option>
+                <option value="Javascript">R</option>
+                <option value="C#">C#</option>
+            </select>
+            <h2>Comment Area:</h2>
+            <textarea name="commentarea" placeholder="Type Comment Here"></textarea>
+            <br>
+            <button inputtype="Submit to Results html">Submit</button>
+            <br>
+        </form>
+
+    </div>
+</body>
+
+</html>

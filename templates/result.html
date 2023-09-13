@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .container {
+        width: 500px;
+        height: 600px;
+        background-color: grey;
+        text-align: left;
+        margin: auto;
+    }
+
+    p {
+        color: black;
+        font-size: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .button {
+        margin-top: 50px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>Submitted Info</h1>
+        <p>Name:</p>
+        <td>{{username}}</td>
+        <p>Location:</p>
+        <td>{{ dojolocation }}</td>
+        <p>Favorite Language:</p>
+        <td>{{ favlanguage }}</td>
+        <p>Comment:</p>
+        <td>{{commentarea}}</td>
+        <br>
+        <div class="button">
+            <form action="/">
+                <button inputtype="Homepage">Go Back</button>
+            </form>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>
